@@ -44,13 +44,11 @@ while (true) {
         alert("Không tìm thấy nhân viên!");
       }
       break;
-
     case "4":
       let searchName = prompt("Nhập tên cần tìm:").toLowerCase();
       let found = employeeList.filter((emp) =>
         emp.name.toLowerCase().includes(searchName)
       );
-
       if (found.length > 0) {
         let result = "Kết quả tìm kiếm:\n";
         found.forEach((emp) => {
@@ -61,7 +59,6 @@ while (true) {
         alert("Không tìm thấy nhân viên!");
       }
       break;
-
     case "5":
       if (employeeList.length === 0) {
         alert("Danh sách nhân viên trống!");
